@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="600dp"
+
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/FoodList">
+        <fragment android:name="com.cs442.sparameshwara.orderfood.FoodMenuListFragment"
+            android:id="@+id/FoodMenuListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal" />
+
+        <fragment android:name="com.cs442.sparameshwara.orderfood.FoodMenuOrderConfirmationFragment"
+            android:id="@+id/FoodMenuOrderConfirmationFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            />
+
+
+    </LinearLayout>
+
+    <fragment android:name="com.cs442.sparameshwara.orderfood.FoodDetailsPageFragment"
+        android:id="@+id/FoodDetailsPageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/FoodList"
+        />
+
+
+
+
+</RelativeLayout>

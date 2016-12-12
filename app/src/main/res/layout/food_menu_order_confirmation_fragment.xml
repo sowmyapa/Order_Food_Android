@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_gradient1"
+    >
+
+    <Button
+       android:id="@+id/orderConfimationButton"
+       android:layout_height="match_parent"
+        android:layout_width="100dp"
+        android:layout_weight="0.5"
+        android:text=" CONFIRM ORDER "
+        android:background="@drawable/bg_shape1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:id="@+id/orderAmountView"
+        android:scaleType="fitCenter"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold|italic"
+        android:text=" TOTAL : 0 $"
+        />
+</LinearLayout>
